@@ -1,0 +1,146 @@
+/* pages/music-player/music-player.wxss */
+page{
+  color: #f4f4f4;
+}
+
+.bg-image, .bg-cover{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.bg-cover{
+  background-color: rgba(0,0,0,.3);
+  backdrop-filter: blur(20px);
+}
+
+/* 标题 */
+.tab {
+  display: flex;
+  font-size: 24rpx;
+  color: #aaa;
+}
+
+.tab .divider {
+  margin: 0 8rpx;
+}
+
+.tab .active {
+  color: #fff;
+}
+
+/* 音乐页面 */
+.swiper .music{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 30rpx 60rpx;
+}
+
+.music .album{
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.music .album .image {
+  width: 100%;
+  border-radius: 12rpx;
+}
+
+.music .info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info .name{
+  font-size: 35rpx;
+  font-weight: 700;
+}
+
+.info .singer {
+  margin-top: 20rpx;
+  font-size: 26rpx;
+  color: #999;
+}
+
+.music .lyric {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.music .progress {
+  /* background-color: aqua; */
+  flex: 1;
+}
+
+.progress .slider {
+  padding: 0;
+  margin: 0 0 20rpx 12rpx;
+
+}
+
+.progress .time {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24rpx;
+  margin: 15rpx 0;
+}
+
+.operation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20rpx 0 50rpx;
+}
+
+.operation .btn {
+  width: 60rpx;
+}
+
+.operation .btn-mode{
+  width: 75rpx;
+}
+
+.operation .btn-play {
+  width: 100rpx;
+}
+
+/* 歌词页面 */
+.lyric .lyric-list{
+  color: #aaa;
+  font-size: 28rpx;
+  text-align: center;
+  height: 100%;
+}
+
+.lyric-list .lyric-item{
+  height: 35px;
+  line-height: 35px;
+}
+
+/* .lyric-list .lyric-item:first-child{
+  padding-top: 100px;
+}
+
+.lyric-list .lyric-item:last-of-type{
+  padding-bottom: 200px;
+} */
+
+.lyric-list ::-webkit-scrollbar{
+  display: none;
+}
+
+.lyric-item.active{
+  color: rgb(146, 243, 10);
+  font-size: 34rpx;
+}
